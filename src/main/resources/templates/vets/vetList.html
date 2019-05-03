@@ -5,17 +5,16 @@
 
 <body>
 
-  <h2>Veterinarians</h2>
+  <h2>Products</h2>
 
   <table id="vets" class="table table-striped">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Specialties</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
-      <tr th:each="vet : ${vets.vetList}">
+      <tr th:each="product : ${catalog}">
         <td th:text="${vet.firstName + ' ' + vet.lastName}"></td>
         <td><span th:each="specialty : ${vet.specialties}"
           th:text="${specialty.name + ' '}" /> <span

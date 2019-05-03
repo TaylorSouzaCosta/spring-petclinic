@@ -63,3 +63,8 @@ CREATE TABLE IF NOT EXISTS visits (
   description VARCHAR(255),
   FOREIGN KEY (pet_id) REFERENCES pets(id)
 ) engine=InnoDB;
+
+CREATE TABLE TABLE IF NOT products(
+	id		INTEGER IDENTITY PRIMARY KEY,
+	description VARCHAR(255)
+	);	
